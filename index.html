@@ -2,19 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./assets/css/utilities.css">
   <title>Tribute Page | Princess Alice Adepeju Afolayan</title>
 </head>
-<body>
+<body onload="typeWriter()">
   <main role="main">
    
     <header>
       <summary>Forever Missed</summary>
-      <img src="assets/img/grandma.png" alt="">
+      <img src="assets/img/grandma.png" alt="" class="animate__animated animate__backInDown">
       <section id="profile">
-        <h3 class="name roboto">Princess Alice Adepeju Afolayan</h3>
+        <h3 class="name roboto animate__animated animate__bounce">
+          <span href="" class="typewrite" data-period="2000" data-type='[ "Princess" ]'>
+            <span class="wrap"></span>
+          </span>
+          
+          Alice Adepeju Afolayan</h3>
         <span class="nickname lato">Nee Adedayo</span>
         <p class="years lato">&LeftAngleBracket; 1930-2020 &RightAngleBracket;</p>
       </section>
@@ -24,13 +33,14 @@
       <summary>Oriki</summary>
       <div id="oriki-container">
 
-        <article>
+        <article class="animate__animated animate__backInLeft">
           <blockquote class="lato">
             "OMO OKUNRINJEJE ABIJAKUNKUN...ESURU SASEJU O TE L'OWO ONIYAN..OMO EPE L'OYAN..OMO OSA AGE..OMO EPE RORO N'IWAJU OBA...OMO ASAGBE SALULU
           </blockquote>
           <cite>Ayodele Samuel Adebayo (Grandson)</cite>
         </article>
-        <article>
+
+        <article class="animate__animated animate__backInRight">
 
           <blockquote class="lato">
             Maami,omo asaoni okese omo olodo ide,aya awoso woye,aya amowo mara,,omo okunrin jeje,a bija kunkun,omo adesi ohun po lewu,eni adesi basun ti ko loyun omo lo tan ninu oluwa re,aya aniyaloye
@@ -49,5 +59,6 @@
   
   </main>
   <!-- js files -->
+  <script src="./assets/js/main.js"></script>
 </body>
 </html>

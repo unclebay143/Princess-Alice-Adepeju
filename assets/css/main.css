@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #fff;
+}
+main{
+  /* margin: 20px; */
+  height: 100vh;
+  width: 310px;
+  /* border: 2px solid red; */
+}
+
+header{
+}
+
+header img{
+  max-width: 250px;
+  display: block;
+  margin: auto;
+}
+
+#profile{
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+  padding: 5px;
+  background: #333;
+  color: #ccc;
+  border-radius: 5px;
+}
+
+#oriki{
+  padding: 0.8rem;
+  line-height: 1.2rem;
+}
+
+#oriki summary{
+  text-align: center;
+  display: block;
+  font-size: 1.7rem;
+  padding: 12px;
+  text-transform: capitalize;
+}
+#oriki blockquote{
+  padding: 1.2rem;
+  text-transform: lowercase;
+}

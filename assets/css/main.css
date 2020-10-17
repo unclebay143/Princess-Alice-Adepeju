@@ -10,17 +10,20 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background: #fff;
 }
 main{
-  /* margin: 20px; */
-  height: 100vh;
   width: 310px;
-  /* border: 2px solid red; */
 }
 
 header{
+}
+header summary{
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'roboto';
+  color: #333;
+  margin-top: 12px;
 }
 
 header img{
@@ -42,16 +45,64 @@ header img{
 #oriki{
   padding: 0.8rem;
   line-height: 1.2rem;
+  margin: 1rem;
 }
 
 #oriki summary{
   text-align: center;
   display: block;
   font-size: 1.7rem;
-  padding: 12px;
+  padding: 12px 32px;
   text-transform: capitalize;
+  color: #333;
+  /* background: #333; */
+  /* color: white; */
+  /* opacity: 0.5; */
 }
 #oriki blockquote{
   padding: 1.2rem;
   text-transform: lowercase;
+}
+
+#oriki cite{
+  margin-left: 1.2rem;
+  padding: 0.4rem;
+  white-space: nowrap;
+  color: #5c4949;
+}
+
+section#add{
+  margin: 1rem;
+}
+
+#add a{
+  text-decoration: none;
+}
+
+#add button{
+  padding: 0.8rem 2rem;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #f4f4f4;
+  font-family: 'Lato';
+  font-size: 1.2rem;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+/*  media quarries for big screens */
+
+@media (min-width: 600px){
+  main{
+    /* margin: 20px; */
+    height: 100vh;
+    width: 500px;
+    /* border: 2px solid red; */
+
+  }
+  
 }

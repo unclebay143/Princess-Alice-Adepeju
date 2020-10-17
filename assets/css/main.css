@@ -98,11 +98,113 @@ section#add{
 
 @media (min-width: 600px){
   main{
-    /* margin: 20px; */
-    height: 100vh;
-    width: 500px;
-    /* border: 2px solid red; */
+    width: 100%;
 
   }
+  header{
+    background: rgb(212, 192, 192);
+    padding-top: 23px;
+  }
+  header summary{
+    font-size: 3.5rem;
+    color: #333;
+    word-spacing: 1.2rem;
+    display: none;
+  }
   
+  header img{
+    max-width: 250px;
+    display: block;
+    margin: auto;
+    border: 9px solid #333;
+    border-radius: 50%;
+    z-index: 99;
+    position: relative;
+    top: 19px;
+  }
+  
+  #profile{
+    border-radius: 0px;
+    bottom: auto;
+  }
+
+  #profile .name{
+    margin-top: 12px;
+    font-size: 2rem;
+    color: #f4f4f4;
+    line-height: 3rem;
+  }
+  
+  #profile .nickname{
+    color: rgb(212, 192, 192);
+    font-size: 1.5rem;
+  }
+  
+  #oriki summary{
+    font-size: 2.7rem;
+    padding: 12px 32px;
+    text-transform: capitalize;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  #oriki #oriki-container{
+    display: flex;
+    gap:  7rem;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.6rem;
+  }
+  #oriki blockquote{
+    padding: 1.2rem;
+    text-transform: lowercase;
+    width: 300px;
+    height: 200px;
+  }
+
+  #oriki article{
+    /* display: flex; */
+    /* flex-direction: column-reverse; */
+  }
+  
+  #oriki cite{
+    margin-left: 1.2rem;
+    padding: 0.4rem;
+    white-space: nowrap;
+    color: #5c4949;
+  }
+  
+  section#add{
+    margin: 1rem;
+  }
+  
+  #add a{
+    text-decoration: none;
+  }
+  
+  #add button{
+    outline: none;
+    background-color: #333;
+    color: #f4f4f4;
+    font-family: 'Lato';
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  
+}
+
+
+@media (max-width: 691px){
+  #oriki #oriki-container{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #oriki blockquote{
+    height: auto;
+  }
 }
